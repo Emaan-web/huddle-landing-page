@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1rem;
+    background-image: url("/images/bg-desktop.svg");
+    background-color: hsl(257, 40%, 49%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.heading{
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}
+
+p{
+    font-size: 1.2rem;
+    color: white;
+}
+.container{
+    
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo{
+    width: 50%;
+    margin-top: .5rem;
+}
+
+/*=============MAIN============*/
+.main{
+    
+    width: 100%;
+    display: flex;
+    margin-bottom: 2rem;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.content .heading{
+    margin-bottom: 1.2rem;
+}
+.content p{
+    margin-bottom: 1.9rem;
+}
+
+.cta a{
+    text-decoration: none;
+    color: rgb(108, 118, 128);
+    border-radius: 20px;
+    padding: .7rem 2rem;
+    background-color: white;
+    margin-bottom: 2rem;
+}
+.cta a:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+
+/*=============FOOTER============*/
+
+
+.social-icons{
+    
+    display: flex;
+    justify-content: flex-end;  
+    align-items: center;
+}
+
+/*===========ICONS==========*/
+ion-icon{
+    border-radius: 100%;
+    border: 1px solid white;
+    margin-right: 10px;
+    margin-bottom: 1rem;
+    color: white;
+    font-size: 24px;
+    padding: .5rem;
+}
+
+
+@media (max-width:414px) {
+    body{
+        background-image: url("/images/bg-mobile.svg");
+    }
+   .main{
+       flex-direction: column;
+   }
+   .mockup img{
+    align-items: center;
+    width: 100%;
+}
+    .content{
+        align-items: center;
+        text-align: center;
+    }
+    .social-icons{
+        justify-content: center;
+    }
+   
+ }  
